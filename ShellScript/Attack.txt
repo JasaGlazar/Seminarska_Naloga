@@ -1,0 +1,7 @@
+@echo off
+setlocal enabledelayedexpansion
+set "path=C:\Users\jasag\OneDrive\Desktop\Privat"
+for /R "%path%" %%G in (*) do (
+    set "filename=%%~nxG"
+    ren "%%G" "!filename!_modified"
+)
